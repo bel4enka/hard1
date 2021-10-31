@@ -1,0 +1,11 @@
+.cards__list {
+  @include flex(row, space-between);
+  gap: 30px;
+  display: none;
+  
+  &:nth-child(3n) {
+    @include flex(row, space-between);
+  }
+  
+ 
+}

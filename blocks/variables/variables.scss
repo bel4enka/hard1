@@ -1,0 +1,39 @@
+
+/* Цвета */
+$normalText: #222;
+$normalTextRGBA: rgb(13%, 13%, 13%, 0.7);
+$bolderText: #151515;
+$backgroundLightBody: #F4F4F4;
+$backgroundFooter: #EFEFEF;
+$backgroundDarkBody: #333;
+$normalTextThemeDark: #E5E5E5;
+$bolderTextThemeDark: #fff;
+$hoverLinkHeader: rgba(21, 21, 21, 0.7);
+$buttonDefault: #24B47E;
+$buttonHover: #319E75;
+$buttonTextColor: #fff;
+$copyrightTextColor: #CFCFCF;
+$hoverLinkLanding: rgba(21, 21, 21, 0.75);
+
+
+
+/* Размеры */
+$sizeMainTitle: 55px;
+$sizeNormalText: 18px;
+$maxWidth: 1440px;
+$mainPadding: 120px;
+$smallPaddingLeftRight: 18px;
+$smallPaddingTopBottom: 80px;
+$paddingButton: 16px 50px;
+$headerHeight: 74px;
+
+$transition: all 0.3s ease-out;
+
+$media: screen;
+
+$mobilePortrait: 320px; //Мобильные устройства (портретная ориентация)
+$mobileLandscape: 480px; //Мобильные устройства (альбомная ориентация)
+$tabletSmall: 600px; //Небольшие планшеты
+$tabletPortrait: 880px; // Планшеты (портретная ориентация)
+$tabletLandscape: 1024px; //Планшеты (альбомная ориентация)
+$desktop: 1330px; //и более — PC.

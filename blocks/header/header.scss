@@ -1,0 +1,8 @@
+.header {
+  position: fixed;
+  background: $backgroundLightBody;
+  z-index: 3;
+  width: 100vw;
+  max-width: 1440px;
+  height: $headerHeight;
+}

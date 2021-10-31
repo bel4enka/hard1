@@ -1,0 +1,17 @@
+.bike-fix  {
+  height: 500px;
+  position: absolute;
+  top: 30%;
+  left: -24%;
+  
+  @include tabletLandscape {
+    height: 50%;
+  }
+  
+  @include tabletPortrait {
+    left: -10px;
+  }
+  @include mobilePortrait {
+    left: 0;
+  }
+}

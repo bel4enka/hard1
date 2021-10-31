@@ -1,0 +1,16 @@
+.cards__item {
+  padding: 0 $mainPadding 0 $mainPadding;
+  
+  @include desktop {
+    padding: $smallPaddingLeftRight;
+  }
+
+  @include mobileLandscape {
+    padding-top: 40px;
+    padding-bottom: 0;
+    
+    &:after {
+      @include border-bottom;
+    }
+  }
+}

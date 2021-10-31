@@ -1,0 +1,8 @@
+.nav_opened {
+
+  & .nav__bar_position_bottom {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+}
+

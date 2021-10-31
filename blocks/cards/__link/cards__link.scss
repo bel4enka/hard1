@@ -1,0 +1,10 @@
+.cards__link {
+  @include font(1.286em, $normalTextRGBA, 400, 28px);
+  text-decoration: none;
+  transition: $transition;
+  
+  &:hover {
+    color: rgb(13%, 13%, 13%, 0.5);
+    
+  }
+}

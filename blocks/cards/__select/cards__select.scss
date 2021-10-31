@@ -1,0 +1,12 @@
+.cards__select{
+  display: none;
+  padding: 0;
+  
+  @include mobileLandscape {
+    display: block;
+    align-self: start;
+    width: 114px;
+  }
+  
+  
+}

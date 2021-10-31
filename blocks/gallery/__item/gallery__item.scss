@@ -1,0 +1,10 @@
+.gallery__item {
+  @include images;
+  max-width: 650px;
+  max-height: 400px;
+  
+  @include tabletLandscape {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

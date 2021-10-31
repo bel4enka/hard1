@@ -1,0 +1,12 @@
+.about__item {
+
+
+  @include mobileLandscape {
+    margin-top: 40px;
+    display: grid;
+    
+    &:after {
+      @include border-bottom;
+    }
+  }  
+}

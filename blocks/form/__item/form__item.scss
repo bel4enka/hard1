@@ -1,0 +1,25 @@
+.form__item {
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  background: $backgroundFooter;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  max-width: 360px;
+  width: 360px;
+  
+  &::placeholder {
+    @include font(13px, $bolderText, 500, 13px)
+  }
+  
+  &:focus {
+    
+    & + .form__button {
+      display: inline;
+    }
+  }
+  
+   @include tabletSmall {
+     max-width: 284px;
+   }
+  
+
+}

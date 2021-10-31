@@ -1,0 +1,7 @@
+.button {
+  @include buttonDefault;
+  
+  &:hover {
+    background-position: left bottom;
+  }
+}

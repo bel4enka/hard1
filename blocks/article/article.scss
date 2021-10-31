@@ -1,0 +1,26 @@
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  margin: 0 auto;
+  position: relative;
+  padding-left: $mainPadding;
+  padding-top: 20px;
+  justify-items: stretch;
+  align-items: start;  
+  
+  @include desktop {
+    padding-left: $smallPaddingLeftRight;
+  }
+  
+  @include tabletSmall {
+    grid-template-columns: 1fr;
+    padding-right: $smallPaddingLeftRight;
+  }
+
+  @include mobileLandscape {
+    &:after {
+      @include border-bottom;
+    }
+  }
+  
+}

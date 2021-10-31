@@ -1,0 +1,6 @@
+.anchor {
+  padding-top: $headerHeight;
+  margin-top: -$headerHeight;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}

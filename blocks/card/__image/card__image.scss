@@ -1,0 +1,13 @@
+.card__image {
+  @include card;
+  box-shadow: 0 0 220px rgba(0, 0, 0, 0.1);
+  @include images;
+  max-width: 340px;
+  max-height: 340px;
+  padding: 20px;
+  
+  @include desktop {
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+}

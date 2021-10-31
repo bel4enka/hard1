@@ -1,0 +1,40 @@
+.switch-theme {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  grid-column: 2;
+  grid-row: 1/4;
+  align-self: end;
+  box-sizing: border-box;
+  margin-right: 100px;
+  
+  &::before {
+    content: '';
+    background: url("././../images/light.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: -50px;
+    top: -2px;
+    
+  }
+  
+  &::after {
+    content: '';
+    background: url("././../images/dark.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -42px;
+    top: 0;
+    
+  }
+
+  @include mobileLandscape {
+   display: none;
+  }
+}

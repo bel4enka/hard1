@@ -1,0 +1,11 @@
+.article__button {
+  grid-row: 3;
+  align-self: center;
+  justify-self: left;
+  
+  @include tabletSmall {
+    grid-row: 4;
+    justify-self: stretch;
+    text-align: center;
+  }
+}

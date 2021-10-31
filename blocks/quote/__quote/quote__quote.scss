@@ -1,0 +1,9 @@
+.quote__quote {
+  @include font(2.429em, $bolderText, 600, 131%);
+  max-width: 470px;
+  margin: 0;
+  
+  @include mobileLandscape {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,12 @@
+.form__button {
+  @include font(13px, $bolderText, 500, 13px);
+  display: none;
+  position: absolute;
+  border: 0;
+  background: none;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  padding: 0;
+}

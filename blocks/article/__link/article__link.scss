@@ -1,0 +1,30 @@
+.article__link {
+  @include font(1.286em, $bolderText, 400, 18px);
+  display: flex;
+  margin-top: 167px;
+  text-decoration: none;
+  transition: $transition;
+  grid-row: 4;
+
+  &:hover {
+    color: $hoverLinkHeader
+  }
+  
+  &:after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #D7D4D4;
+    margin-top: 1.5%;
+    margin-left: 30px;
+  }
+  
+  @include tabletPortrait {
+    margin-top: 50px;
+  }
+  
+  @include tabletSmall {
+    display: none;
+  }
+}

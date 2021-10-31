@@ -1,0 +1,8 @@
+.arrow__prev {
+  @include arrow;
+  background-image: url("././../images/arrow.svg");
+
+  &:hover {
+    @include arrow-hover;
+  }
+}

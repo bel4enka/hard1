@@ -1,0 +1,13 @@
+.training__link {
+  @include font(18px, $bolderText, 600, 28px);
+  text-decoration: none;
+  transition: $transition;
+  
+  &:hover {
+    color: $hoverLinkLanding;
+  }
+  
+  @include tabletPortrait {
+    font-size: 14px;
+  }
+}
