@@ -1,21 +1,40 @@
+$themes: (
+        light: (
+                backgroundLightBody: #F4F4F4,
+                bolderText: #151515,
+                backgroundFooter: #EFEFEF,
+                normalTextRGBA: rgb(34, 34, 34, 0.7),
+                normalTextRGBAHover: rgb(34, 34, 34, 0.5),
+                normalText: #222,
+                copyrightTextColor: #CFCFCF,
+                hoverLinkLanding: rgba(21, 21, 21, 0.75),
+                backgroundLightCards: #F4F4F4,
+                hoverLinkHeader: rgba(21, 21, 21, 0.7),
+                backgroundArrow: rgb(92%, 92%, 92%, 0.6),
+                backgroundSwitchTheme: #fff,
+                backgroundNavBar: #333,
+        ),
+        dark: (
+                backgroundLightBody: #333,
+                bolderText: #fff,
+                backgroundFooter: #2F2F2F,
+                normalTextRGBA: rgba(229, 229, 229, 0.7),
+                normalTextRGBAHover: rgba(229, 229, 229, 0.5),
+                normalText: #E5E5E5,
+                copyrightTextColor: #565656,
+                hoverLinkLanding: rgba(255, 255, 255, 0.65),
+                hoverLinkHeader: rgba(255, 255, 255, 0.65),
+                backgroundLightCards: #F4F4F4,
+                backgroundArrow: rgb(67, 67, 67, 0.6),
+                backgroundSwitchTheme: #545454,
+                backgroundNavBar: #fff,
+                
+        ),
+);
 
-/* Цвета */
-$normalText: #222;
-$normalTextRGBA: rgb(13%, 13%, 13%, 0.7);
-$bolderText: #151515;
-$backgroundLightBody: #F4F4F4;
-$backgroundFooter: #EFEFEF;
-$backgroundDarkBody: #333;
-$normalTextThemeDark: #E5E5E5;
-$bolderTextThemeDark: #fff;
-$hoverLinkHeader: rgba(21, 21, 21, 0.7);
 $buttonDefault: #24B47E;
 $buttonHover: #319E75;
 $buttonTextColor: #fff;
-$copyrightTextColor: #CFCFCF;
-$hoverLinkLanding: rgba(21, 21, 21, 0.75);
-
-
 
 /* Размеры */
 $sizeMainTitle: 55px;

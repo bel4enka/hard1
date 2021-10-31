@@ -1,5 +1,8 @@
 .form__button {
-  @include font(13px, $bolderText, 500, 13px);
+  @include font(13px, 500, 13px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
   display: none;
   position: absolute;
   border: 0;

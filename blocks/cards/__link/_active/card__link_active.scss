@@ -1,8 +1,14 @@
 .cards__link_active {
-  @include font(1.286, $bolderText, 600, 28px);
+  @include font(1.286, 600, 28px);
+  
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
   transition: $transition;
   
   &:hover {
-    color: $hoverLinkLanding;
+    @include themify($themes) {
+      color: themed('hoverLinkLanding');
+    }
   }
 }

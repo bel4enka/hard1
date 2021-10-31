@@ -1,5 +1,8 @@
 .article__link {
-  @include font(1.286em, $bolderText, 400, 18px);
+  @include font(1.286em, 400, 18px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
   display: flex;
   margin-top: 167px;
   text-decoration: none;
@@ -7,7 +10,9 @@
   grid-row: 4;
 
   &:hover {
-    color: $hoverLinkHeader
+    @include themify($themes) {
+      color: themed('hoverLinkHeader');
+    }
   }
   
   &:after {

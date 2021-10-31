@@ -1,5 +1,5 @@
 .body_theme_dark {
-  //переделать
-  filter: invert(100%);
-  background: $backgroundDarkBody;
+  @include themify($themes) {
+    background: themed('backgroundLightBody');
+  }
 }

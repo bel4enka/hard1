@@ -1,6 +1,24 @@
-@mixin font ($size, $color, $fontW, $lh) {
-  font-size: $size ;
-  color: $color;
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+
+@mixin font ($size, $fontW, $lh) {
+  font-size: $size;
   font-weight: $fontW;
   line-height: $lh;
   font-family: Inter, Arial, sans-serif;
@@ -8,7 +26,9 @@
 
 @mixin title {
   font-size: 3.93em;
-  color: $bolderText;
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
   font-weight: 700;
   line-height: 110%;
   font-family: Inter, Arial, sans-serif;
@@ -16,7 +36,9 @@
 
 @mixin text {
   font-size: 1.29em;
-  color: $normalTextRGBA;
+  @include themify($themes) {
+    color: themed('normalTextRGBA');
+  }
   font-weight: 400;
   line-height: 155%;
   font-family: Inter, Arial, sans-serif;
@@ -37,7 +59,8 @@
 
 @mixin buttonDefault {
   padding: $paddingButton;
-  @include font(14px, $buttonTextColor, 600, 18px);
+  @include font(14px, 600, 18px);
+  color: $buttonTextColor;
   background: linear-gradient(to right, $buttonHover 50%, $buttonDefault 50%);
   background-position-x: 0;
   background-position-y: 0;
@@ -59,11 +82,15 @@
 }
 
 @mixin arrow {
-  background-color: #EBEBEB;
+  @include themify($themes) {
+    background-color: themed('backgroundArrow');
+  }
   width: 50px;
   height: 50px;
   text-decoration: none;
-  color: $bolderText;
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
   font-size: 20px;
   border-radius: 100px;
   background-repeat: no-repeat;
@@ -82,7 +109,9 @@
 }
 
 @mixin card {
-  background: #F4F4F4;
+  @include themify($themes) {
+    background: themed('backgroundLightCards');
+  }
   border-radius: 20px;
 }
 

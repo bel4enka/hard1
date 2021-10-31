@@ -1,13 +1,18 @@
 .form__item {
   border: 1px solid rgba(199, 199, 199, 0.5);
-  background: $backgroundFooter;
+  @include themify($themes) {
+    background: themed('backgroundFooter');
+  }
   box-sizing: border-box;
   padding: 12px 20px;
   max-width: 360px;
   width: 360px;
   
   &::placeholder {
-    @include font(13px, $bolderText, 500, 13px)
+    @include font(13px, 500, 13px);
+    @include themify($themes) {
+      color: themed('bolderText');
+    }
   }
   
   &:focus {

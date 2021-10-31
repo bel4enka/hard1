@@ -1,7 +1,9 @@
 .nav__bar {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  @include themify($themes) {
+    background-color: themed('backgroundNavBar');
+  }
   margin: 6px 0;
   transition: 0.4s;
 }

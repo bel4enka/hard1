@@ -2,7 +2,9 @@
   position: relative;
   width: 44px;
   height: 24px;
-  background: #fff;
+  @include themify($themes) {
+    background: themed('backgroundSwitchTheme');
+  }
   border-radius: 10px;
   margin-bottom: 60px;
   cursor: pointer;
