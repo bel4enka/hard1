@@ -1,6 +1,9 @@
 .about__item {
-
-
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 1s;
+ 
   @include mobileLandscape {
     margin-top: 40px;
     display: grid;

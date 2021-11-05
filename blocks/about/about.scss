@@ -1,5 +1,7 @@
 .about {
   padding-left: $mainPadding;
+  max-width: $maxWidth;
+  margin: 0 auto;
   
   @include desktop {
     padding-left: $smallPaddingLeftRight;
@@ -10,3 +12,4 @@
     
   }
 }
+

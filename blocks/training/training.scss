@@ -1,5 +1,6 @@
 .training {
-  //@include flex(row, space-between);
+  max-width: $maxWidth;
+  margin: 0 auto;
   display: grid;
   padding: $mainPadding;
   grid-row: 1;

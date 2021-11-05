@@ -1,0 +1,16 @@
+.pagination {
+  display: none;
+  
+  @include mobileLandscape {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    width: 50px;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 20px;
+    z-index: 2;
+    grid-row: 3;
+  }
+  
+}

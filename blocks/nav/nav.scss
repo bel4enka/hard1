@@ -1,5 +1,6 @@
 .nav {
   @include flex(row-reverse, end);
   transition: visibility 0s, opacity 0.5s linear;
-  
+  max-width: 1440px;
+  margin: 0 auto;
 }

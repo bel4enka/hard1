@@ -1,14 +1,5 @@
 .footer {
-  display: grid;
-  justify-content: space-between;
-
   @include themify($themes) {
     background: themed('backgroundFooter');
-  }
-  padding: 0 $mainPadding 0 $mainPadding;
-  
-  @include desktop {
-    padding-left: $smallPaddingLeftRight;
-    padding-right: $smallPaddingLeftRight;
   }
 }

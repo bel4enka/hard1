@@ -9,5 +9,6 @@
   @include mobileLandscape {
     flex-direction: column;
     gap: 40px;
+    grid-row: 1;
   }
 }

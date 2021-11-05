@@ -1,12 +1,7 @@
 .article__main-img {
   @include images;
-  max-width: 610px;
-  max-height: 836px;
-  
-  @include desktop {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  max-width: 100%;
+  max-height: 100%;
   
   @include tabletSmall {
     max-width: 95%;

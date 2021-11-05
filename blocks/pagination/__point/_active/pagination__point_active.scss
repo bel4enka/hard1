@@ -1,0 +1,5 @@
+.pagination__point_active {
+  @include themify($themes) {
+    background: themed('bolderText');
+  }
+}

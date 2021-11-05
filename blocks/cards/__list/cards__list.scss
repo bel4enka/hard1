@@ -1,11 +1,15 @@
 .cards__list {
   @include flex(row, space-between);
   gap: 30px;
-  display: none;
-  
-  &:nth-child(3n) {
-    @include flex(row, space-between);
+  transition: opacity 1s;
+  opacity: 0;
+  grid-column: 1;
+  grid-row: 1;
+
+  @include mobileLandscape {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
   }
-  
- 
 }

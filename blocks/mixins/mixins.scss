@@ -96,6 +96,8 @@
   background-repeat: no-repeat;
   background-position: center;
   transition: $transition;
+  border: none;
+  cursor: pointer;
 
   @include mobileLandscape {
     width: 24px;

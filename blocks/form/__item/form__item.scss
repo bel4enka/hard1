@@ -2,6 +2,7 @@
   border: 1px solid rgba(199, 199, 199, 0.5);
   @include themify($themes) {
     background: themed('backgroundFooter');
+    border-radius: 4px;
   }
   box-sizing: border-box;
   padding: 12px 20px;

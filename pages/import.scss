@@ -6,11 +6,13 @@
 @import "../blocks/body/body";
 @import "../blocks/main/main";
 @import "../blocks/footer/footer";
+@import "../blocks/footer/__wrap/footer__wrap";
 @import "../blocks/header/header";
 @import "../blocks/intro/intro";
 @import "../blocks/intro/__article/intro__article";
 @import "../blocks/quote/quote";
 @import "../blocks/about/about";
+@import "../blocks/about/__articles/about__articles";
 @import "../blocks/cards/cards";
 @import "../blocks/menu/menu";
 @import "../blocks/menu/__item/menu__item";
@@ -19,12 +21,8 @@
 @import "../blocks/nav/nav";
 @import "../blocks/nav/_opened/nav_opened";
 @import "../blocks/nav/__bar/nav__bar";
-@import "../blocks/nav/__bar/_position/nav__bar_position_top";
-@import "../blocks/nav/__bar/_position/nav__bar_position_bottom";
-@import "../blocks/nav/__bar/_position/nav__bar_position_middle";
 @import "../blocks/nav/__wrap/nav__wrap";
 @import "../blocks/article/article";
-@import "../blocks/article/__main-card/article__main-card";
 @import "../blocks/article/__desc/article__desc";
 @import "../blocks/article/__main-img/article__main-img";
 @import "../blocks/article/__button/article__button";
@@ -43,6 +41,7 @@
 @import "../blocks/quote/__profession/quote__profession";
 @import "../blocks/quote/__quote/quote__quote";
 @import "../blocks/about/__item/about__item";
+@import "../blocks/about/__item/_show/about__item_show";
 @import "../blocks/about/__text/about__text";
 @import "../blocks/about/__title/about__title";
 @import "../blocks/arrow/arrow";
@@ -60,7 +59,9 @@
 @import "../blocks/cards/__link/_active/card__link_active";
 @import "../blocks/cards/__header/cards__header";
 @import "../blocks/cards/__links/cards__links";
+@import "../blocks/cards/__wrap/cards__wrap";
 @import "../blocks/cards/__list/cards__list";
+@import "../blocks/cards/__list/_show/cards__list_show";
 @import "../blocks/cards/__select/cards__select";
 @import "../blocks/card/card";
 @import "../blocks/card/__image/card__image";
@@ -85,5 +86,10 @@
 @import "../blocks/switch-theme/switch-theme";
 @import "../blocks/switch-theme/__toggle/switch-theme__toggle";
 @import "../blocks/switch-theme/_dark/switch-theme_dark";
+@import "../blocks/switch-theme/_active/switch-theme_active";
 @import "../blocks/logo/logo";
 @import "../blocks/anchor/anchor";
+@import "../blocks/pagination/pagination";
+@import "../blocks/pagination/__point/pagination__point";
+@import "../blocks/pagination/__point/_active/pagination__point_active";
+@import "../blocks/card/_show/card_show";
