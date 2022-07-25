@@ -1,0 +1,31 @@
+.form__item {
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  @include themify($themes) {
+    background: themed('backgroundFooter');
+    border-radius: 4px;
+  }
+  box-sizing: border-box;
+  padding: 12px 20px;
+  max-width: 360px;
+  width: 360px;
+  
+  &::placeholder {
+    @include font(13px, 500, 13px);
+    @include themify($themes) {
+      color: themed('bolderText');
+    }
+  }
+  
+  &:focus {
+    
+    & + .form__button {
+      display: inline;
+    }
+  }
+  
+   @include tabletSmall {
+     max-width: 284px;
+   }
+  
+
+}

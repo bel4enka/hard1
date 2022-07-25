@@ -1,0 +1,14 @@
+.cards__header {
+  @include flex(row, space-between);
+  padding-bottom: $mainPadding;
+  
+  @include tabletLandscape {
+    padding-bottom: 40px;
+  }
+
+  @include mobileLandscape {
+    flex-direction: column;
+    gap: 40px;
+    grid-row: 1;
+  }
+}

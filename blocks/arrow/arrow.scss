@@ -1,0 +1,16 @@
+.arrow {
+  @include flex(row, start);
+  gap: 20px;
+  padding-bottom: $mainPadding;
+  
+  @include tabletPortrait {
+    padding-bottom: $smallPaddingTopBottom;
+  }
+  
+  @include mobileLandscape {
+    position: absolute;
+    top: 47px;
+    right: 18px;
+
+  }
+}

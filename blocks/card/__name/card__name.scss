@@ -1,0 +1,14 @@
+.card__name {
+  @include font(1.286em, 600, 22px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+  text-decoration: none;
+  margin: 22px 0 60px 10px;
+  
+  @include mobileLandscape {
+    margin-bottom: 0;
+    align-self: center;
+    margin-left: 0;
+  }
+}

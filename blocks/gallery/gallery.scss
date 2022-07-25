@@ -1,0 +1,38 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  
+  &:before {
+    width: 110px;
+    height: 40px;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $buttonDefault;
+    background-position: center;
+    background-repeat: no-repeat ;
+    transform: skew(-25deg, 0deg);
+    bottom: 16px;
+    left: -10px;
+    z-index: 1;
+
+    @include mobileLandscape {
+      width: 95px;
+      height: 28px;
+      
+      &:last-child {
+        display: none;
+      }
+
+    }
+    
+    
+    
+  }
+  
+  
+}

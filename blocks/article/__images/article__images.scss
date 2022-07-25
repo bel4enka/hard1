@@ -1,0 +1,10 @@
+.article__images {
+  position: relative;
+  text-align: end;
+  grid-row: 1/5;
+  
+  @include tabletSmall {
+    grid-row: 2;
+    margin-bottom: 40px;
+  }
+}

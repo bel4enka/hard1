@@ -1,0 +1,5 @@
+.body_theme_dark {
+  @include themify($themes) {
+    background: themed('backgroundLightBody');
+  }
+}

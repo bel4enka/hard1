@@ -1,0 +1,52 @@
+.nav__bar {
+  width: 35px;
+  height: 5px;
+  @include themify($themes) {
+    background-color: themed('backgroundNavBar');
+  }
+  transition: 0.4s;
+  background: none;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  
+  &::before {
+    width: 35px;
+    height: 5px;
+    @include themify($themes) {
+      background-color: themed('backgroundNavBar');
+    }
+    content: '';
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -4px;
+  }
+  &::after {
+    width: 35px;
+    height: 5px;
+    @include themify($themes) {
+      background-color: themed('backgroundNavBar');
+    }
+    content: '';
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: -4px;
+  }
+}
+
+.nav_opened {
+
+  & .nav__bar {
+    background: none;
+
+    &::before {
+      -webkit-transform: rotate(-45deg) translate(-1px, 1px);
+      transform: rotate(-45deg) translate(-1px, 1px);
+    }
+    &::after {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -7px);
+    }
+    
+  }
+}

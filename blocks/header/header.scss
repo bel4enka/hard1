@@ -1,0 +1,9 @@
+.header {
+  position: fixed;
+  @include themify($themes) {
+    background: themed('backgroundLightBody');
+  }
+  z-index: 3;
+  width: 100vw;
+  height: $headerHeight;
+}

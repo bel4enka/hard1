@@ -1,0 +1,10 @@
+.switch-theme__toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background: $buttonDefault;
+  border-radius: 100px;
+  transition-duration: 300ms;
+}

@@ -1,0 +1,11 @@
+.training__links {
+  @include flex(row, start);
+  gap: 30px;
+  margin-top: auto;
+  grid-row: 3;
+
+  @include tabletSmall {
+    order: 3;
+  }
+  
+}

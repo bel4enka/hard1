@@ -1,0 +1,6 @@
+.quote__author {
+  @include font(1.429em, 500, 167%);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+}

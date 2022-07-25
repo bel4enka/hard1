@@ -1,0 +1,8 @@
+.quote__text {
+  @include flex(column, space-between);
+  margin: 0;
+  
+  @include mobileLandscape {
+    grid-row: 2;
+  }
+}

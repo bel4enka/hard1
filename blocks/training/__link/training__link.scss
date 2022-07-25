@@ -1,0 +1,18 @@
+.training__link {
+  @include font(18px, 600, 28px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+  text-decoration: none;
+  transition: $transition;
+  
+  &:hover {
+    @include themify($themes) {
+      color: themed('hoverLinkLanding');
+    }
+  }
+  
+  @include tabletPortrait {
+    font-size: 14px;
+  }
+}

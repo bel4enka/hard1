@@ -1,0 +1,21 @@
+
+
+.nav_opened {
+  visibility: visible;
+  opacity: 1;
+
+  @include mobileLandscape {
+    
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    @include themify($themes) {
+      background: themed('backgroundLightBody');
+    }
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    gap: 100px
+
+  }
+}

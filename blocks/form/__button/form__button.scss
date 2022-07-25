@@ -1,0 +1,15 @@
+.form__button {
+  @include font(13px, 500, 13px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+  display: none;
+  position: absolute;
+  border: 0;
+  background: none;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  padding: 0;
+}

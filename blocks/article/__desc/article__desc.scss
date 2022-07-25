@@ -1,0 +1,21 @@
+.article__desc {
+  @include text;
+  margin: 0 0 66px 0;
+  max-width: 460px;
+  grid-row: 2;
+  
+  @include desktop {
+    max-width: 330px;
+  }
+  
+  @include tabletLandscape {
+    margin-bottom: 40px;
+    max-width: 280px;
+  }
+  
+  @include tabletSmall {
+    grid-row: 3;
+    max-width: 100%;
+  }
+  
+}

@@ -1,0 +1,12 @@
+.training__title {
+  @include title;
+  margin: 0 0 50px 0;
+  
+  @include tabletLandscape {
+    margin-bottom: 40px;
+  };
+
+  @include tabletSmall {
+    margin-bottom: 0;
+  }
+}

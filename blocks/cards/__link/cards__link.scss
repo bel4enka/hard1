@@ -1,0 +1,14 @@
+.cards__link {
+  @include font(1.286em, 400, 28px);
+  @include themify($themes) {
+    color: themed('normalTextRGBA');
+  }
+  text-decoration: none;
+  transition: $transition;
+  
+  &:hover {
+    @include themify($themes) {
+      color: themed('normalTextRGBAHover');
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.footer {
+  @include themify($themes) {
+    background: themed('backgroundFooter');
+  }
+}

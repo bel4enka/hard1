@@ -1,0 +1,12 @@
+.card {
+  @include flex(column, start);
+  
+  @include mobileLandscape {
+    grid-row: 1;
+    grid-column: 1;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+}

@@ -1,0 +1,21 @@
+.menu__link {
+  @include font(1em, 500, 18px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+    text-decoration: none;
+  transition: $transition;
+  
+  &:hover {
+    @include themify($themes) {
+      color: themed('hoverLinkHeader');
+    }
+  }
+
+  @include  mobileLandscape {
+    @include font(18px, 500, 18px);
+    @include themify($themes) {
+      color: themed('bolderText');
+    }
+  }
+}

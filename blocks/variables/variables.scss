@@ -1,0 +1,58 @@
+$themes: (
+        light: (
+                backgroundLightBody: #F4F4F4,
+                bolderText: #151515,
+                backgroundFooter: #EFEFEF,
+                normalTextRGBA: rgb(34, 34, 34, 0.7),
+                normalTextRGBAHover: rgb(34, 34, 34, 0.5),
+                normalText: #222,
+                copyrightTextColor: #CFCFCF,
+                hoverLinkLanding: rgba(21, 21, 21, 0.75),
+                backgroundLightCards: #F4F4F4,
+                hoverLinkHeader: rgba(21, 21, 21, 0.7),
+                backgroundArrow: rgb(92%, 92%, 92%, 0.6),
+                backgroundSwitchTheme: #fff,
+                backgroundNavBar: #333,
+        ),
+        dark: (
+                backgroundLightBody: #333,
+                bolderText: #fff,
+                backgroundFooter: #2F2F2F,
+                normalTextRGBA: rgba(229, 229, 229, 0.7),
+                normalTextRGBAHover: rgba(229, 229, 229, 0.5),
+                normalText: #E5E5E5,
+                copyrightTextColor: #565656,
+                hoverLinkLanding: rgba(255, 255, 255, 0.65),
+                hoverLinkHeader: rgba(255, 255, 255, 0.65),
+                backgroundLightCards: #F4F4F4,
+                backgroundArrow: rgb(67, 67, 67, 0.6),
+                backgroundSwitchTheme: #545454,
+                backgroundNavBar: #fff,
+                
+        ),
+);
+
+$buttonDefault: #24B47E;
+$buttonHover: #319E75;
+$buttonTextColor: #fff;
+
+/* Размеры */
+$sizeMainTitle: 55px;
+$sizeNormalText: 18px;
+$maxWidth: 1440px;
+$mainPadding: 120px;
+$smallPaddingLeftRight: 18px;
+$smallPaddingTopBottom: 80px;
+$paddingButton: 16px 50px;
+$headerHeight: 74px;
+
+$transition: all 0.3s ease-out;
+
+$media: screen;
+
+$mobilePortrait: 320px; //Мобильные устройства (портретная ориентация)
+$mobileLandscape: 480px; //Мобильные устройства (альбомная ориентация)
+$tabletSmall: 600px; //Небольшие планшеты
+$tabletPortrait: 880px; // Планшеты (портретная ориентация)
+$tabletLandscape: 1024px; //Планшеты (альбомная ориентация)
+$desktop: 1330px; //и более — PC.

@@ -1,0 +1,14 @@
+.menu {
+  @include listStyleNone(0, 28px $mainPadding 28px 0);
+  @include flex(row, end);
+  gap: 34px;
+  
+  @include tabletSmall {
+    padding-right: 40px;
+  }
+  
+  @include mobileLandscape {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

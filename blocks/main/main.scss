@@ -1,0 +1,7 @@
+.main {
+  padding-top: $headerHeight;
+  @include themify($themes) {
+    background: themed('backgroundLightBody');
+  }
+
+}

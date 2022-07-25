@@ -1,0 +1,12 @@
+.quote__quote {
+  @include font(2.429em, 600, 131%);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+  max-width: 470px;
+  margin: 0;
+  
+  @include mobileLandscape {
+    margin-bottom: 40px;
+  }
+}

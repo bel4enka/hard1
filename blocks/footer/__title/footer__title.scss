@@ -1,0 +1,12 @@
+.footer__title {
+  @include font(24px, 600, 32px);
+  @include themify($themes) {
+    color: themed('bolderText');
+  }
+  margin: 80px 0 50px;
+  max-width: 230px;
+  
+  @include tabletSmall {
+    margin: 60px 0 40px;
+  }
+}

@@ -1,0 +1,18 @@
+.cards__select{
+  display: none;
+  padding: 0;
+  
+  @include mobileLandscape {
+    display: block;
+    align-self: start;
+    width: 114px;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #F4F4F4;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    font-size: 11px;
+  }
+  
+  
+}

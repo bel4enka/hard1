@@ -1,0 +1,7 @@
+.footer__copyright {
+  @include font(14px, 600, 19px);
+  @include themify($themes) {
+    color: themed('copyrightTextColor');
+  }
+  margin-bottom: 60px;
+}

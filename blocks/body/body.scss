@@ -1,0 +1,13 @@
+.body {
+  font-size: 14px;
+  line-height: 14px;
+
+
+  @include tabletLandscape {
+    font-size: 11px;
+  }
+
+  @include tabletSmall {
+    font-size: 9px;
+  }
+}

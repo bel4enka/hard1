@@ -1,0 +1,27 @@
+.quote__article {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  padding: $mainPadding ;
+  
+  @include tabletLandscape {
+    padding: $mainPadding $smallPaddingLeftRight $mainPadding $smallPaddingLeftRight;
+  }
+  
+  @include tabletPortrait {
+    padding: $smallPaddingTopBottom $smallPaddingLeftRight $smallPaddingTopBottom $smallPaddingLeftRight;
+    gap: 20px;
+  }
+  
+  @include mobileLandscape {
+    padding-top: 20px;
+    padding-bottom: 0;
+    gap: 40px;
+    
+    &:after {
+      @include border-bottom;
+      margin-top: 40px;
+      grid-row: 3;
+    }
+  }
+}

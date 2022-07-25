@@ -1,0 +1,9 @@
+.arrow__next {
+  @include arrow;
+  background-image: url("././../images/arrow.svg");
+  transform: rotate(-180deg);
+  
+  &:hover {
+    @include arrow-hover;
+  }
+}

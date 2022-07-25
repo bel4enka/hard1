@@ -1,0 +1,6 @@
+.quote__profession {
+  @include font(1.143em, 400, 177%);
+  @include themify($themes) {
+    color: themed('normalTextRGBA');
+  }
+}
